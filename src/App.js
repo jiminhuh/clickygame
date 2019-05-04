@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
+//  my compoenent
 import NavBar from './components/NavBar';
+import Banner from './components/Banner';
 import IconCard from './components/IconCard';
 import Icons from './icons.json';
+//
 import "./components/IconCard.css";
+//
+// import "tachyons";
+// import "hover";
+// import "animate";
+
 
 const shuffleArray = (array) => {
   let counter = array.length;
@@ -106,6 +114,7 @@ class App extends Component {
     return (
       <div className='container'>
         <NavBar topScore={this.state.topScore} currentScore={this.state.currentScore} status={this.state.result}/>
+        <Banner />
         <div className='mainStyle'>
         {this.state.Icons.map(icon => (
         <IconCard
