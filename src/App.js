@@ -5,12 +5,8 @@ import NavBar from './components/NavBar';
 import Banner from './components/Banner';
 import IconCard from './components/IconCard';
 import Icons from './icons.json';
-//
 import "./components/IconCard.css";
-//
-// import "tachyons";
-// import "hover";
-// import "animate";
+
 
 
 const shuffleArray = (array) => {
